@@ -17,3 +17,8 @@ repos:
       - id: check-added-large-files
       - id: end-of-file-fixer
       - id: trailing-whitespace
+-   repo: https://github.com/aws-cloudformation/cfn-python-lint
+    rev: v0.44.5  # The version of cfn-lint to use
+    hooks:
+    -   id: cfn-python-lint
+        files: infrastructure/*
